@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Wizardshot</title>
+  </head>
+  <body>
+    <section class="w-full overflow-hidden">
+      <nav class="fixed w-full bg-white z-10">
+        <div class="w-4/5 mx-auto flex items-center justify-between py-10">
+          <div class="flex items-center gap-x-4">
+            <img
+              class="w-[35px] h-[30px] md:w-[45px] md:h-[40px]"
+              src="images/logo.png"
+              alt=""
+            />
+            <h2 class="heading text-lg md:text-3xl font-extrabold">
+              Wizardshot
+            </h2>
+          </div>
+          <div
+            class="hidden md:flex items-center gap-x-[20px] hover:text-black opacity-60 text-[16px] font-normal hover:font-semibold text-[#4F4F4F]"
+          >
+            <a class="hover:underline transition-all ease-in" href="#">Home</a>
+            <a class="hover:underline transition-all ease-in" href="#"
+              >Features</a
+            >
+            <a class="hover:underline transition-all ease-in" href="#">About</a>
+            <a class="hover:underline transition-all ease-in" href="#"
+              >Help Center & Community</a
+            >
+          </div>
+          <div class="hidden md:flex items-center gap-4">
+            <a
+              class="text-[#6666] hover:text-black opacity-60 text-[16px] font-normal hover:font-semibold"
+              href="#"
+              >Login</a
+            >
+            <button
+              class="flex items-center bg-buttonCol rounded-lg py-2 px-4 gap-2"
+            >
+              <img class="w-[19px] h-[19px]" src="images/chrome.png" alt="" />
+              <span class="buttonText text-white text-sm font-bold"
+                >Instal Wizardshot</span
+              >
+            </button>
+          </div>
+          <!--Hamburger Menu-->
+          <button
+            id="menu-btn"
+            class="block hamburger md:hidden focus:outline-none"
+          >
+            <span class="hamburger-top"></span>
+            <span class="hamburger-mid"></span>
+            <span class="hamburger-bot"></span>
+          </button>
+        </div>
+        <!--Mobile menu-->
+        <div class="md:hidden">
+          <div
+            id="menu"
+            class="absolute flex-col hidden self-end font-bold bg-white w-full h-screen"
+          >
+            <div
+              class="flex flex-col items-start gap-y-6 p-6 border-b hover:text-black opacity-60 text-[16px] font-normal hover:font-semibold text-[#4F4F4F]"
+            >
+              <a class="" href="#">Home</a>
+              <a class="" href="#">Features</a>
+              <a class="" href="#">About</a>
+              <a class="" href="#">Help Center & Community</a>
+              <a class="" href="#">Login</a>
+            </div>
+            <div class="flex items-center justify-center pt-6">
+              <button
+                class="flex items-center bg-buttonCol rounded-lg py-2 px-4 gap-2"
+              >
+                <img class="w-[19px] h-[19px]" src="images/chrome.png" alt="" />
+                <span class="buttonText text-white text-sm font-bold"
+                  >Instal Wizardshot</span
+                >
+              </button>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="w-[90%] md:w-4/5 mx-auto">
+        <div class="flex flex-col items-center justify-center mt-[152px]">
+          <h1
+            class="text-textColor heading text-[35px] leading-[40px] md:text-[52px] font-extrabold text-center md:leading-[69px]"
+          >
+            Your Magic Wand for <br class="hidden md:flex" />
+            Instant Documentation
+          </h1>
+          <h5
+            class="uppercase subheading mt-4 text-xl md:text-base text-center font-semibold opacity-60"
+          >
+            Turn ANY process into a simple step-by step Guide
+          </h5>
+          <button
+            class="flex items-center bg-buttonCol mt-8 rounded-lg py-2 pr-[20px] pl-[24px] gap-1"
+          >
+            <span class="buttonText text-white text-base font-bold"
+              >Instal Wizardshot</span
+            ><img class="" src="images/next.png" alt="" />
+          </button>
+        </div>
+        <div class="flex flex-col items-center justify-center mt-8">
+          <div
+            class="w-[356.47px] h-[204.61px] md:w-[1039.31px] md:h-[590.75px] p-3 rounded-xl bg-gradient-to-b from-gradient1 to-gradient2"
+          >
+            <img class="rounded-lg" src="images/play.png" alt="play_video" />
+          </div>
+        </div>
+        <div class="flex flex-col items-center justify-center mt-20">
+          <h1
+            class="heading font-extrabold leading-[35.2px] text-[32px] md:text-[40px] text-center"
+          >
+            Say
+            <span class="underline">Goodbye To Writing Docs</span>, and Hello
+            <br class="hidden md:flex" />
+            To Wizardshot Doing it for YOU.
+          </h1>
+          <div
+            class="flex flex-col md:flex-row gap-y-6 mt-10 items-center justify-evenly w-full"
+          >
+            <div class="flex flex-col w-[297px] gap-6">
+              <img
+                class="h-[234px] rounded-md shadow-2xl shadow-gradient2"
+                src="images/slika1.png"
+                alt="photo1"
+              />
+              <div class="flex flex-col gap-2">
+                <h4 class="subheading font-semibold text-lg">
+                  1. Click Capture
+                </h4>
+                <p class="font-normal subheading text-sm opacity-55">
+                  Once you install the Chrome extension, fire it up, and click
+                  “Capture”.
+                </p>
+              </div>
+            </div>
+            <div class="flex flex-col w-[297px] gap-6">
+              <img
+                class="h-[234px] rounded-md shadow-2xl shadow-gradient2"
+                src="images/slika2.png"
+                alt="photo2"
+              />
+              <div class="flex flex-col gap-2">
+                <h4 class="subheading font-semibold text-lg">
+                  2. Perform Your Actions
+                </h4>
+                <p class="font-normal subheading text-sm opacity-55">
+                  Once capturing, Wizardshot carefully monitors what you do to
+                  understand how to document it.
+                </p>
+              </div>
+            </div>
+            <div class="flex flex-col w-[297px] gap-6">
+              <img
+                class="h-[234px] rounded-md shadow-2xl shadow-gradient2"
+                src="images/slika3.png"
+                alt="photo3"
+              />
+              <div class="flex flex-col gap-2">
+                <h4 class="subheading font-semibold text-lg">
+                  3.✅ Done. Article Written
+                </h4>
+                <p class="font-normal subheading text-sm opacity-55">
+                  Wizardshot carefully crafts the perfect article based off your
+                  actions recorded. Just click “Done” and we&apos;ll write up
+                  the article in a second.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col justify-center items-center mt-10">
+            <h2 class="text-center heading font-bold text-xl">
+              <span class="underline text-3xl">+32 MORE FEATURES</span><br />
+              INCLUDING A KB INTEGRATION
+            </h2>
+            <img class="w-[53.6px] h-[46.19px]" src="images/guy.png" />
+          </div>
+        </div>
+        <div
+          class="w-full flex flex-col items-center justify-center mt-20 mb-20"
+        >
+          <div
+            class="flex justify-between w-[374.5px] h-[26px] md:w-[692px] md:h-[40px] bg-gradient-to-r from-[#F0FBB9] via-[#FBB3A0] to-[#BFA2FD] border-t-8 border-white"
+          >
+            <div class="flex items-center">
+              <h5
+                class="text-[21px] md:text-[40px] underline font-medium text-textColor heading"
+              >
+                Free
+              </h5>
+              <span
+                class="heading text-[8px] md:text-sm font-medium text-textColor"
+                >Free <br />
+                Forever</span
+              >
+            </div>
+            <div class="flex items-center">
+              <h5
+                class="text-[21px] md:text-[40px] underline font-medium text-textColor heading"
+              >
+                Unlimited
+              </h5>
+              <span
+                class="heading text-[8px] md:text-sm font-medium text-textColor"
+                >Tutorial <br />
+                Creation</span
+              >
+            </div>
+            <div class="flex items-center">
+              <h5
+                class="text-[21px] md:text-[40px] underline font-medium text-textColor heading"
+              >
+                Powerful
+              </h5>
+              <span
+                class="heading text-[8px] md:text-sm font-medium text-textColor"
+                >Editor & <br />
+                Integrations</span
+              >
+            </div>
+          </div>
+          <div
+            class="flex flex-col items-center justify-center pt-6 pb-10 md:py-14 md:px-20 mt-20 border-[6px] border-black rounded-lg"
+          >
+            <h2
+              class="heading font-extrabold text-[32px] md:text-[40px] leading-[35.2px] md:leading-[56px] text-center"
+            >
+              Create A Detailed Tutorial <br class="md:flex hidden" />
+              in Less than 3 clicks
+            </h2>
+            <button
+              class="flex items-center bg-buttonCol mt-8 rounded-lg py-2 pr-[20px] pl-[24px] gap-2 md:gap-6"
+            >
+              <img class="w-[32px] h-[32px]" src="images/chrome.png" alt="" />
+              <span
+                class="buttonText text-white text-[24px] md:text-[32px] font-normal"
+                >Instal Wizardshot</span
+              >
+            </button>
+            <h4
+              class="text-center text-[14px] md:text-[28px] mt-8 font-extrabold heading leading-[16.8px] md:leading-[33.6px] capitalize"
+            >
+              “Has helped us write help docs 100x faster” <br />
+              <span class="font-normal">- Dany River, Cartier Informatie</span>
+            </h4>
+            <span class="h-[17.97px] text-center w-full">⭐⭐⭐⭐⭐</span>
+          </div>
+        </div>
+        <div class="flex flex-col items-center justify-center mb-20">
+          <h2 class="heading font-extrabold text-[32px] text-center mb-10">
+            Common Questions
+          </h2>
+          <div
+            id="accordion"
+            class="flex flex-col items-center justify-center w-full md:w-3/4 mx-auto gap-8 md:gap-4"
+          >
+            <div class="item md:px-20 md:w-3/4 border-b cursor-pointer">
+              <div class="header flex justify-between py-6">
+                <span class="text-[16px] font-medium text-blueCol"
+                  >What i Wizardshot?</span
+                >
+                <img
+                  class="w-4 h-4 inactiveIcon"
+                  src="images/upload (1).png"
+                  alt=""
+                />
+                <img
+                  class="w-4 h-4 activeIcon"
+                  src="images/upload.png"
+                  alt=""
+                />
+              </div>
+              <div class="content transition-all duration-250">
+                <p class="text-sm">
+                  Wizardshot is a web app & chrome extension . that allows you
+                  to create step-by-step tutorials simply by capturing your
+                  screen.
+                </p>
+              </div>
+            </div>
+            <div class="item md:px-20 md:w-3/4 border-b cursor-pointer">
+              <div class="header flex justify-between py-6">
+                <span class="text-[16px] font-medium text-blueCol"
+                  >How is Wizardshot Free?</span
+                >
+                <img
+                  class="w-4 h-4 inactiveIcon"
+                  src="images/upload (1).png"
+                  alt=""
+                />
+                <img
+                  class="w-4 h-4 activeIcon"
+                  src="images/upload.png"
+                  alt=""
+                />
+              </div>
+              <div
+                class="content flex flex-col gap-y-10 md:gap-y-8 transition-all duration-250"
+              >
+                <p class="text-sm">
+                  The costs to run a service is really inexpensive as most of
+                  the processing happens in the Chrome extension.
+                </p>
+                <p class="text-sm">
+                  Really - all that we have to pay for is
+                  <span class="underline">super-secure hosting</span>,
+                  <span class="underline">awesome 24/7 support</span> and
+                  that&apos;s it.
+                </p>
+                <p class="text-sm font-semibold">
+                  We built Wizardshot as a stand-alone product with a deep
+                  <span class="underline">Helpjuice Knowledge Base</span>
+                  integration.
+                </p>
+              </div>
+            </div>
+            <div class="item md:px-20 md:w-3/4 border-b cursor-pointer">
+              <div class="header flex justify-between py-6">
+                <span class="text-[16px] font-medium text-blueCol"
+                  >Is my data secure?</span
+                >
+                <img
+                  class="w-4 h-4 inactiveIcon"
+                  src="images/upload (1).png"
+                  alt=""
+                />
+                <img
+                  class="w-4 h-4 activeIcon"
+                  src="images/upload.png"
+                  alt=""
+                />
+              </div>
+              <div class="content transition-all duration-250">
+                <p class="text-sm">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Similique assumenda officiis nihil aperiam, autem impedit non
+                  laboriosam, amet rerum facilis id eos incidunt corrupti
+                  laborum minima, molestias vero praesentium error.
+                </p>
+              </div>
+              <div
+                class="flex flex-col md:flex-row justify-center md:justify-between py-6 gap-y-5 w-full"
+              >
+                <span
+                  class="capitalize text-center md:text-right text-sm font-bold"
+                  >Curious to learn more?</span
+                >
+                <button
+                  class="capitalize bg-[#03132E] text-white rounded-lg font-bold text-sm py-2 px-2"
+                >
+                  Visit Help & Community Center
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="flex flex-col md:flex-row items-center gap-y-6 w-full md:w-[1136px] justify-start md:justify-between rounded-t-lg bg-black py-8 pr-4 pl-4 md:pr-24 md:pl-12 mx-auto"
+        >
+          <div class="flex flex-col gap-y-6">
+            <h3 class="text-[#F9FAFB] text-2xl font-medium">
+              Create Tutorials in 3 Clicks
+            </h3>
+            <p
+              class="text-sm w-[90%] md:w-[510.68px] text-[#F9FAFB] opacity-60"
+            >
+              With WizardShot, You Click Capture, And We&apos;ll Capture
+              What&apos;s Happening on Your Screen And Turn It Into A Tutorial.
+            </p>
+          </div>
+          <button class="flex w-full justify-end items-center gap-x-2">
+            <p
+              class="hover:underline transition text-xl font-medium text-[#F9FAFB] ease-in"
+            >
+              Try WizardShot
+            </p>
+            <span><img src="images/next.png" alt="" /></span>
+          </button>
+        </div>
+        <div
+          class="w-full flex md:flex-row flex-col items-start justify-between border-t-2 border-black md:px-20 mb-20"
+        >
+          <div class="flex flex-col gap-4 mt-10">
+            <div class="flex items-center">
+              <img class="w-[55px] h-[50px]" src="images/logo.png" alt="" />
+              <h2 class="heading text-4xl font-extrabold">Wizardshot</h2>
+            </div>
+            <p class="text-lg font-semibold">
+              Turn complex process into a <br />
+              simple step-by step Guide
+            </p>
+            <img class="w-[132px] h-[85px]" src="images/img.png" alt="" />
+          </div>
+          <div class="flex gap-x-20 items-start justify-between mt-10">
+            <div class="flex flex-col gap-4">
+              <h4 class="text-[22px] font-bold">Learn more</h4>
+              <div class="flex flex-col">
+                <a class="text-lg font-semibold" href="#">Wizardshot</a>
+                <a class="text-lg font-semibold" href="#">Community Page</a>
+                <a class="text-lg font-semibold" href="#">Help Center</a>
+                <a class="text-lg font-semibold" href="#"
+                  >Security Information</a
+                >
+              </div>
+            </div>
+            <div class="flex flex-col gap-4">
+              <h4 class="text-[22px] font-bold">Company</h4>
+              <div class="flex flex-col">
+                <a class="text-lg font-semibold" href="#">About Us</a>
+                <a class="text-lg font-semibold" href="#">Status Page</a>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col gap-6 mt-10">
+            <div class="hidden md:flex flex-col text-right">
+              <span>📞 +1 (833) 387 3877</span>
+              <span>✉️ success@wizardshot.com</span>
+            </div>
+            <div
+              class="flex gap-[18px] justify-start md:justify-end opacity-80"
+            >
+              <button><img src="images/tik-tok.png" alt="" /></button>
+              <button><img src="images/instagram.png" alt="" /></button>
+            </div>
+            <div
+              class="flex justify-start md:gap-x-20 gap-x-10 pt-3 md:pt-10 mr-10"
+            >
+              <a class="text-[22px] font-bold">Sign Up</a>
+              <a class="text-[22px] font-bold">Log In</a>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col items-center justify-center mb-10 gap-y-10">
+          <div class="md:hidden flex flex-col text-center">
+            <span>📞 +1 (833) 387 3877</span>
+            <span>✉️ success@wizardshot.com</span>
+          </div>
+          <p class="text-base font-medium">
+            © 2024 Wizardshot – All rights reserved.
+          </p>
+        </div>
+      </div>
+    </section>
+  </body>
+
+  <script>
+    let items = document.querySelectorAll("#accordion .item .header");
+
+    items.forEach((item) => {
+      item.addEventListener("click", (e) => {
+        e.currentTarget.closest(".item").classList.toggle("active");
+      });
+    });
+
+    const hamburgerMenu = document.getElementById("menu-btn");
+    const btn = document.getElementById("menu");
+
+    hamburgerMenu.addEventListener("click", () => {
+      hamburgerMenu.classList.toggle("open");
+      btn.classList.toggle("flex");
+      btn.classList.toggle("hidden");
+    });
+  </script>
+</html>

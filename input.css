@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.heading {
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.subheading {
+  font-family: "Open Sans", sans-serif;
+}
+
+.buttonText {
+  font-family: "Mulish", sans-serif;
+}
+
+.item .activeIcon {
+  @apply hidden;
+}
+
+.item.active .inactiveIcon {
+  @apply hidden;
+}
+
+.item.active .activeIcon {
+  @apply block;
+}
+
+.item:not(.active) .content {
+  @apply h-0 overflow-hidden;
+}
+
+.item.active .content {
+  @apply pb-4;
+}
+
+/* Hamburger*/
+.hamburger {
+  cursor: pointer;
+  position: relative;
+  width: 24px;
+  height: 24px;
+  transition: all 0.3s;
+}
+
+.hamburger-top,
+.hamburger-mid,
+.hamburger-bot {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 2px;
+  background: #000;
+  transform: rotate(0);
+  transition: all 0.5s;
+}
+
+.hamburger-mid {
+  transform: translateY(8px);
+}
+
+.hamburger-bot {
+  transform: translateY(16px);
+}
+
+.open {
+  transform: rotate(90deg);
+  transform: translateY(0px);
+}
+
+.open .hamburger-top {
+  transform: rotate(45deg) translateY(6px) translate(6px);
+}
+
+.open .hamburger-mid {
+  display: none;
+}
+
+.open .hamburger-bot {
+  transform: rotate(-45deg) translateY(6px) translate(-6px);
+}
